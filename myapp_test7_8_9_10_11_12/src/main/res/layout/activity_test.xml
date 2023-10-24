@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ch7_Test.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼1"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼2"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼3"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/lay1">
+<!--        lay1의 바텀이 현재 객체의 탑으로-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="버튼4"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="버튼5"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="버튼5"
+            android:layout_weight="1"
+            android:theme="@style/Theme.AppCompat"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/lay2">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="텍스트 콘텐츠"
+            android:textSize="15sp"
+            android:backgroundTint="#FF9800"
+            android:background="@color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/lay3">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img4"/>
+
+        <Button
+            android:id="@+id/frameBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="프레임 테스트">
+        </Button>
+
+
+    </FrameLayout>
+
+    <GridLayout
+        android:id="@+id/lay5"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:rowCount="2"
+        app:layout_constraintTop_toBottomOf="@id/lay4"
+        >
+
+        <Button android:text="1"/>
+        <Button android:text="2"/>
+        <Button android:text="3"/>
+        <Button android:text="4"/>
+        <Button android:text="5"/>
+        <Button android:text="6"/>
+        <Button android:text="7"/>
+        <Button android:text="8"/>
+        <Button android:text="9"/>
+        <Button android:text="10"/>
+        <Button android:text="11"/>
+        <Button android:text="12"/>
+
+
+
+    </GridLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -66,5 +66,47 @@ class TestActivity : AppCompatActivity() {
         activityTestBinding.profileImg.setOnClickListener {
             Toast.makeText(this@TestActivity, "이미지 클릭했음.!!", Toast.LENGTH_SHORT).show()
         }
+
+
+        // 체크박스 클릭시 이벤트 핸들러 사용하기.
+
+
+        activityTestBinding.checkBox1.setOnCheckedChangeListener { buttonView, isChecked ->
+            Toast.makeText(this@TestActivity,"check1 선택됨", Toast.LENGTH_SHORT).show()
+        }
+
+        activityTestBinding.checkBox2.setOnCheckedChangeListener { buttonView, isChecked ->
+            Toast.makeText(this@TestActivity,"check2 선택됨", Toast.LENGTH_SHORT).show()
+        }
+
+        activityTestBinding.radio1.setOnCheckedChangeListener { buttonView, isChecked ->
+            Toast.makeText(this@TestActivity,"남자 선택됨", Toast.LENGTH_SHORT).show()
+        }
+
+        activityTestBinding.radio2.setOnCheckedChangeListener { buttonView, isChecked ->
+            Toast.makeText(this@TestActivity,"여자 선택됨", Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
