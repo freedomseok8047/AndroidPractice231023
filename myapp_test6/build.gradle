@@ -30,6 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    // 설정 필요함, 뷰들을 하나의 인스턴스에 모두 담아두는 기능
     viewBinding {
         enabled = true
     }
