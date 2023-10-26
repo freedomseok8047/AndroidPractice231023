@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.MyApplication_231020_test1" parent="Base.Theme.MyApplication_231020_test1" />
+<!--    기본적인 텍스트를 만들고 css 적용시 기본 틀로 사용-->
+    <style name="MytestCss">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:background">#7A03A9F4</item>
+        <item name="fontFamily">@font/bmyeonsung_otf</item>
+    </style>
+
+    <style name="MyToolBarCss">
+        <item name="android:background">#4CAF50</item>
+    </style>
 </resources>
