@@ -22,6 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication_231020_test1">
         <activity
+            android:name=".ch11_Test.tabTest.TabTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch11_Test.viewPagerAndRecycler.TestPageRecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch11_Test.viewPager.TestViewPagerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch11_Test.recyclerDataTest.TestRecyclerDataActivity"
+            android:exported="true" />
+        <activity
             android:name=".recycler.Test11_RecyclerViewActivity"
             android:exported="true" />
         <activity
