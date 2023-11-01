@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ch13_Test.TestIntentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="이메일 입력해주세요"
+            style="@style/MytestCss"
+            android:inputType="text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/showEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"/>
+        <Button
+            android:id="@+id/hideEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="패스워드 입력해주세요"
+            style="@style/MytestCss"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/ageEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="나이 입력해주세요"
+            style="@style/MytestCss"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/testBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인하기"/>
+
+        <Button
+            android:id="@+id/testBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="후처리 테스트 "/>
+
+        <Button
+            android:id="@+id/testBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="후처리 방법2 테스트 "/>
+
+        <TextView
+            android:id="@+id/resultData1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp"
+            android:background="@color/main_text_color"/>
+
+        <Button
+            android:id="@+id/testBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인텐트 필터를 이용한 구글맵 연동"/>
+
+        <Button
+            android:id="@+id/testBtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인텐트 필터를 이용한 외부앱 크롬 연동2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#2261FF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FF3422"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FF9800"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -20,7 +20,7 @@
 
     <!--검색 기능, 제트팩 시스템의 위젯-->
     <item
-        android:id="@+id/toolbar_search"
+        android:id="@+id/menu_toolbar_search"
         android:title="검색"
         app:showAsAction="always"
         app:actionViewClass="androidx.appcompat.widget.SearchView"/>
