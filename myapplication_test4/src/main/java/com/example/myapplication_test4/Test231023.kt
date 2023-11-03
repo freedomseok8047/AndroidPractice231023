@@ -82,7 +82,7 @@ class MyClass {
 
 fun main() {
 // 널허용 연산자. ?
-    var data: String? = "lsy"
+    var data: String? = "ljs"
 
     val resultdata = data?.length ?: 0
     println("resultdata : ${resultdata}")

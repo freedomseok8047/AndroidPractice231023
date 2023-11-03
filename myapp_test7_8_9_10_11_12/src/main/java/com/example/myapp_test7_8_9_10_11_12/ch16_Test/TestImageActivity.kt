@@ -27,7 +27,9 @@ class TestImageActivity : AppCompatActivity() {
         //작업 구성 2가지.
         // 첫번째, 갤러리 앱을 호출 하는 작업
         // 두번째, 갤러리 앱에 데이터를 가져온 내용을 처리하는 작업.
+
         // 갤러리에서 선택 된 사진을 출력하는 뷰하나 생성.
+
         // 두번째, 갤러리 앱에 데이터를 가져온 내용을 처리하는 작업.
         val requestGalleryLauncher = registerForActivityResult(
             // 지금 정의하는 부분은 시스템에서 각 사용처 마다 정의가 다 되어 있고,
@@ -73,11 +75,11 @@ class TestImageActivity : AppCompatActivity() {
                 // 지금, 그냥 출력하지만, 비동기식으로 처리하는 glide 라는 라이브러리를 주로 이용할 예정.
                 binding.resultUserImage.setImageBitmap(bitmap)
 
-                Log.d("lsy","갤러리에서 선택된 사진의 크기 비율 calRatio : $calRatio")
+                Log.d("ljs","갤러리에서 선택된 사진의 크기 비율 calRatio : $calRatio")
 
             } catch (e: Exception) {
                 e.printStackTrace()
-                Log.d("lsy", "사진 출력 실패")
+                Log.d("ljs", "사진 출력 실패")
 
             }
 
@@ -195,7 +197,7 @@ class TestImageActivity : AppCompatActivity() {
             inputStream = null
         } catch (e:Exception) {
             e.printStackTrace()
-            Log.d("lsy", "사진 크기 비율 계산 실패 ")
+            Log.d("ljs", "사진 크기 비율 계산 실패 ")
         }
         // 비율 계산
         val (height : Int, width: Int) = options.run { outHeight to outWidth }

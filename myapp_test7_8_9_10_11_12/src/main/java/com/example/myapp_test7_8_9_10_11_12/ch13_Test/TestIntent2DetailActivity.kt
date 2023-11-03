@@ -21,7 +21,7 @@ class TestIntent2DetailActivity : AppCompatActivity() {
 //        val age = intent.getIntExtra("age",30)
 
         // 데이터 확인
-        Log.d("lsy","데이터 확인 2번 화면 이메일: ${email} , " +
+        Log.d("ljs","데이터 확인 2번 화면 이메일: ${email} , " +
                 "패스워드: ${password}, 나이: ${age}")
 
         binding.resultEmailView.text = "이메일 : $email"

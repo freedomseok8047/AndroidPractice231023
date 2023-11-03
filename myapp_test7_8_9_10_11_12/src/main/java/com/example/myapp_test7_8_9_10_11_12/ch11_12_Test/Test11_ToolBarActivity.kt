@@ -35,7 +35,7 @@ class Test11_ToolBarActivity : AppCompatActivity() {
 
     // 액션바 클릭시, 이벤트 처리.
     override fun onSupportNavigateUp(): Boolean {
-        Log.d("lsy","test")
+        Log.d("ljs","test")
         onBackPressed()
         return super.onSupportNavigateUp()
     }
@@ -51,7 +51,7 @@ class Test11_ToolBarActivity : AppCompatActivity() {
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextChange(newText: String?): Boolean {
                 //검색어가 변경시 마다, 실행될 로직을 추가.
-                Log.d("lsy","텍스트 변경시 마다 호출 : ${newText} ")
+                Log.d("ljs","텍스트 변경시 마다 호출 : ${newText} ")
                 return true
             }
 

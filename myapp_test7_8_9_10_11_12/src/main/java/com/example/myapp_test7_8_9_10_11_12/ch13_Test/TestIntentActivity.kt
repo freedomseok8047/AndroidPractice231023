@@ -63,7 +63,7 @@ class TestIntentActivity : AppCompatActivity() {
             val intent : Intent = Intent(this@TestIntentActivity,
                 TestIntent2DetailActivity::class.java)
             // 데이터 보내기 했음.
-//            intent.putExtra("email","lsy")
+//            intent.putExtra("email","ljs")
 //            intent.putExtra("password","1234")
 
             // 후처리 하기.
@@ -132,7 +132,7 @@ class TestIntentActivity : AppCompatActivity() {
         // 넘어온 데이터는 data 에 담아져 있다.
         if (requestCode == 10 && resultCode == Activity.RESULT_OK) {
             val result = data?.getStringExtra("resultData")
-            Log.d("lsy","넘어온 결과값 : $result")
+            Log.d("ljs","넘어온 결과값 : $result")
         }
     }
 

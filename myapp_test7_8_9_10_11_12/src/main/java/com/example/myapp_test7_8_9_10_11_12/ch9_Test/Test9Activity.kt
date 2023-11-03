@@ -207,14 +207,14 @@ class Test9Activity : AppCompatActivity() {
                 // 체크박스용 클릭 리스너 ,
 //                val objectListener = object : DialogInterface.OnMultiChoiceClickListener {
 //                    override fun onClick(dialog: DialogInterface?, which: Int, isChecked: Boolean) {
-//                        Log.d("lsy","${items[which]}이 ${if(isChecked) "선택됨"  else "선택해제됨"}")
+//                        Log.d("ljs","${items[which]}이 ${if(isChecked) "선택됨"  else "선택해제됨"}")
 //                    }
 //                }
 
                 // 라디오 클릭 리스너
                 val objectListener = object : DialogInterface.OnClickListener {
                     override fun onClick(dialog: DialogInterface?, which: Int) {
-                        Log.d("lsy","선택한 과일 : ${items[which]}")
+                        Log.d("ljs","선택한 과일 : ${items[which]}")
                     }
                 }
                 // 목록요소 1
