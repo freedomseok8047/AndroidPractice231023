@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
     <!-- 이용자 입장, 현대 앱에서 -> 외부 앱의 기능을 많이 이용함 -->
     <!-- 시스템 앱 ex) gps, 갤러기, 카메라, 캘린더, 등등 이용을 많이함 -->
     <!-- 특정 앱에 접근을 신청하는 양식 -->
@@ -16,15 +16,19 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".ch18_Test.retrofit.MyApplication2"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="액션바테스트"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication_231020_test1" >
+        android:theme="@style/Theme.MyApplication_231020_test1">
+        <activity
+            android:name=".ch18_Test.NewsApiTestActivity"
+            android:exported="true" />
         <activity
             android:name=".ch18_Test.HttpTestReqResActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ch17_Test.PreferenceTest.SharedPrefDetailTestActivity"
             android:exported="true" />
@@ -48,7 +52,7 @@
             android:authorities="com.example.myapp_test7_8_9_10_11_12.fileprovider"
             android:enabled="true"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -127,7 +131,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

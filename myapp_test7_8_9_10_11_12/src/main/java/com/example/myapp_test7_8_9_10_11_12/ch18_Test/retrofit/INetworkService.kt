@@ -9,8 +9,8 @@ import retrofit2.http.Url
 
 // 통신 라이브러리 : retrofit2 이용해서
 // 인터페이스, 추상 메서드를 만들어서
-// 레트로핏 한테 전달 : 인터페이스 통을 ㅗ전달하면,
-// 여기에 정의 도니 함수를 이용해서 통신을 함, CRUD 개념
+// 레트로핏 한테 전달 : 인터페이스 통해서 전달하면,
+// 여기에 정의 된 함수를 이용해서 통신을 함, CRUD 개념
 interface INetworkService {
     @GET("api/users")
     // base url : https://reqres.in/
@@ -19,11 +19,11 @@ interface INetworkService {
     // 예, 함수 호출 -> doGetUserList("3")
     // => https://reqres.in/api/users?page=3
     // 반환 타입은 Call, 담겨진 데이터는 리스트의 요소가 (UserModel)담겨진 내용을 전달받음
-    fun doGetUserList(@Query("page") page : String): Call<UserListModel>
-
-    // 프로필 이미지를 받기 위한, 추상 함수
-    // @Url
-    // 기본 baseUrl 이 있지만, 다른 url 를 호출 할 때 사용.
+    fun doGetUserList(@Query("page") page: String): Call<UserListModel>
+    // 프로필 이미지를 받기 위한 , 추상 함수.
+//    @Url
+//    기본 baseUrl 이 있지만, 다른 url 를 호출 할 때 사용.
     @GET
-    fun getAvatarImage(@Url url : String): Call<ResponseBody>
+    fun getAvatarImage(@Url url:String): Call<ResponseBody>
+
 }

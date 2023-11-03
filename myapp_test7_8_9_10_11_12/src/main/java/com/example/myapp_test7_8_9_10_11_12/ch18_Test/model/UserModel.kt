@@ -19,7 +19,7 @@ data class UserModel (
     @SerializedName("last_name")
     val lastName : String,
     // 프로필 이미지가 저장된 위치의 url 주소
-    val avata : String,
+    val avatar : String
 
     //추가로 속성 값 더 가져오기
 
