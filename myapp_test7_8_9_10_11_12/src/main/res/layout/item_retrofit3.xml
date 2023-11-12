@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/retrofitMainImg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_basic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/retrofitTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIN_TITLE"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/retrofitContent1View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/retrofitContent2View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRFC_INFO"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
